@@ -1,31 +1,61 @@
 ﻿<html>
-
 <head>
-
-		<title> Register</title>
-		<meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <title> Registration Form </title>
 </head>
-	
 <body>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12">
+            <div class="logo">SHERLOCK HOLMES</div>
+            <ul class="main-nav">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="photo_gallery.html">Photo Gallery</a></li>
+                <li ><a href="my_family.html">My Family</a></li>
+                <li><a href="my_hometown.html">My Hometown</a></li>
+                <li><a href="my_hobbies.html">My Hobbies</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li class="active"><a href="registration_form.html">Registration Form</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="content">
 
-		<form>
-		
-		Name:<input type="text" name="name">
-		<br>
-		Surname:<input type="text" name="surname">
-		<br>
-		E-Mail:<input type="email" name="mail">
-		<br>
-		Password:<input type="password" name="pw">
-		<br>
-		Gender:
-		<input type="radio" name="gender" value="Male">Male
-		<input type="radio" name="gender" value="Female">Female
-		<br>
-		Date of Birth:<input type="date" name="date">
-		<br>
-	
-    City:
+		<form class="reg-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="surname">Surname</label>
+            <input type="text" class="form-control" id="surname" placeholder="Your surname">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Your e-mail">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Your password">
+          </div>
+          <div class="form-group">
+          <p>Gender</p>
+              <label class="checkbox-inline"><input type="checkbox" value="">Male</label>
+              <label class="checkbox-inline"><input type="checkbox" value="">Female</label>
+          </div>
+            <div class="form-group">
+            <label for="date">Birthdate</label>
+            <input type="date" class="form-control" id="date" placeholder="Select a date">
+          </div>
+   <div class="form-group">
+   <p>City</p>
     <select name="cities">
         <option value="0">------</option>
         <option value="1">Adana</option>
@@ -109,23 +139,21 @@
         <option value="79">Kilis</option>
         <option value="80">Osmaniye</option>
         <option value="81">Düzce</option>
-    </select><br>
+    </select></p>
     
-    About Me:<textarea cols="20" rows="5" ></textarea>
-	<br>
-    Photo (for file upload): <input type="file" name="fileToUpload">
-	<br>
-    
-    Interest checkboxes:
+           <div class="form-group">
+            <label for="aboutme">About me</label>
+            <textarea class="form-control" id="aboutme" placeholder="About me"></textarea>
+          </div>
+    <p>Photo (for file upload): <input type="file" name="fileToUpload"></p>
+    <p>Interest checkboxes:
     <input type="checkbox" value="Music">Music
     <input type="checkbox" value="Books">Books
     <input type="checkbox" value="Sports">Sports
     <input type="checkbox" value="Theatre">Theatre
     <input type="checkbox" value="Science">Science
-    <input type="checkbox" value="History">History
-	<br>
-	<br>
-    <input type="submit" value="Thank you for registration!">
+    <input type="checkbox" value="History">History</p>
+    <p><input type="submit" value="Thank you for registration!"></p>
 
 
 

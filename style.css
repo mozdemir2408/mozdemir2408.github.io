@@ -1,0 +1,55 @@
+body{
+	background: #1A1A1A;
+	color: #B6B6B6;
+	font-family: "Roboto Condensed", Consolas, sans-serif;
+}
+.logo{
+	font-size: 25px;
+	font-weight: 700;
+	margin-top: 40px;
+}
+.main-nav{
+	margin:20px 0px;
+	padding: 0px
+}
+.main-nav li{
+	display: inline;
+	list-style: none;
+	text-transform: uppercase;
+	margin-right: 15px;
+	font-size: 14px;
+	border-bottom: solid 1px #292929;
+	padding-bottom: 5px
+}
+.active{
+	border-bottom: solid 1px #3e677d !important;
+}
+.active a{
+	color: #DDDDDD !important;
+}
+.main-nav li a:hover{
+	color: white;
+	text-decoration: none;
+}
+.main-nav li a{
+	color: gray;
+}
+.content{
+	margin:50px 0px 0px 0px;
+	font-size: 21px;
+}
+hr{
+	    border-top: 1px solid #3B3B3B;
+}
+.reg-form input{background: #272727; border-radius: 0px; color:#fff; border:solid 1px black;}
+.reg-form select{background: #272727; border-radius: 0px; color:#fff; border:solid 1px black;}
+.reg-form textarea{background: #272727; border-radius: 0px; color:#fff; border:solid 1px black;}
+.reg-form p{
+	display: block;
+}
+@media only screen and (max-device-width: 480px) {
+	.main-nav li{
+		display: block;
+		padding: 15px 0px;
+	}
+}
